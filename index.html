@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeCorretora - Todos os Seguros para Você e Sua Empresa</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #FF6600;
+            --light: #F5F5F5;
+            --dark: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #e65c00;
+            transform: translateY(-2px);
+        }
+        
+        .insurance-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .insurance-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .insurance-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .insurance-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .insurance-card-content {
+            padding: 20px;
+        }
+        
+        .insurance-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .testimonials {
+            background-color: var(--primary);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .testimonial {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .insurance-types {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SafeCorretora</h1>
+            <p>Sua parceira em soluções de seguros há mais de 20 anos</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Proteção Completa para Você e Seu Patrimônio</h2>
+            <p>Encontre o seguro ideal com os melhores preços e condições do mercado</p>
+            <a href="#contact" class="btn">Solicite uma Cotação</a>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary);">Tipos de Seguros Disponíveis</h2>
+        
+        <div class="insurance-types">
+            <!-- Seguros Automotivos -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8" alt="Seguro Automotivo">
+                <div class="insurance-card-content">
+                    <h3>Seguro Automotivo</h3>
+                    <p>Proteção completa para seu veículo contra acidentes, roubos e danos. Coberturas adicionais como carro reserva e vidros.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro Residencial -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf" alt="Seguro Residencial">
+                <div class="insurance-card-content">
+                    <h3>Seguro Residencial</h3>
+                    <p>Proteja sua casa contra incêndios, roubos, danos elétricos e eventos naturais. Cobertura para bens e responsabilidade civil.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro de Vida -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e" alt="Seguro de Vida">
+                <div class="insurance-card-content">
+                    <h3>Seguro de Vida</h3>
+                    <p>Proteção financeira para sua família em caso de morte natural ou acidental, com coberturas adicionais para invalidez e doenças graves.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro Saúde -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" alt="Plano de Saúde">
+                <div class="insurance-card-content">
+                    <h3>Plano de Saúde</h3>
+                    <p>Planos individuais, familiares e empresariais com ampla rede credenciada, atendimento nacional e diversos níveis de cobertura.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro Odontológico -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Seguro Odontológico">
+                <div class="insurance-card-content">
+                    <h3>Seguro Odontológico</h3>
+                    <p>Cobertura para tratamentos odontológicos preventivos e corretivos, com diversas opções de planos individuais e coletivos.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro Viagem -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b" alt="Seguro Viagem">
+                <div class="insurance-card-content">
+                    <h3>Seguro Viagem</h3>
+                    <p>Proteja sua viagem nacional ou internacional com cobertura para assistência médica, extravio de bagagem, cancelamento e mais.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro Empresarial -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Seguro Empresarial">
+                <div class="insurance-card-content">
+                    <h3>Seguro Empresarial</h3>
+                    <p>Proteção completa para sua empresa, incluindo patrimônio, equipamentos, responsabilidade civil, riscos operacionais e mais.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro Rural -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Seguro Rural">
+                <div class="insurance-card-content">
+                    <h3>Seguro Rural</h3>
+                    <p>Proteção para propriedades rurais, lavouras, gado, equipamentos agrícolas e riscos climáticos específicos do agronegócio.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro de Responsabilidade Civil -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Seguro RC">
+                <div class="insurance-card-content">
+                    <h3>Seguro de Responsabilidade Civil</h3>
+                    <p>Cobertura para danos involuntários causados a terceiros, essencial para profissionais liberais e empresas de diversos setores.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro de Equipamentos Portáteis -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c" alt="Seguro de Equipamentos">
+                <div class="insurance-card-content">
+                    <h3>Seguro de Equipamentos Portáteis</h3>
+                    <p>Proteção para celulares, notebooks, câmeras e outros equipamentos eletrônicos contra roubo, furto qualificado e danos acidentais.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro de Embarcações -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1518544866330-95a5ac7cdf5a" alt="Seguro de Embarcações">
+                <div class="insurance-card-content">
+                    <h3>Seguro de Embarcações</h3>
+                    <p>Cobertura para barcos e iates contra danos, roubo, responsabilidade civil e assistência náutica em caso de avarias ou acidentes.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Seguro de Crédito -->
+            <div class="insurance-card">
+                <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="Seguro de Crédito">
+                <div class="insurance-card-content">
+                    <h3>Seguro de Crédito</h3>
+                    <p>Proteção para empresas contra inadimplência de clientes, garantindo o recebimento de vendas a prazo e protegendo o fluxo de caixa.</p>
+                    <a href="#contact" class="btn" style="background-color: var(--primary);">Cotar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que Nossos Clientes Dizem</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"A SafeCorretora encontrou o seguro perfeito para minha frota de veículos com um custo-benefício excelente. Atendimento impecável!"</p>
+                    <p><strong>Carlos Eduardo, Transportadora</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Quando precisei acionar meu seguro residencial após um roubo, fui atendida com agilidade e todo o suporte necessário. Recomendo!"</p>
+                    <p><strong>Ana Paula, Cliente Residencial</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Como médico, o seguro de responsabilidade civil foi essencial para minha tranquilidade. A SafeCorretora explicou todas as cláusulas detalhadamente."</p>
+                    <p><strong>Dr. Roberto, Profissional Liberal</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container" style="margin: 50px auto;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary);">Solicite uma Cotação</h2>
+        
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="insurance-type">Tipo de Seguro</label>
+                    <select id="insurance-type" required>
+                        <option value="">Selecione...</option>
+                        <option value="auto">Seguro Automotivo</option>
+                        <option value="residencial">Seguro Residencial</option>
+                        <option value="vida">Seguro de Vida</option>
+                        <option value="saude">Plano de Saúde</option>
+                        <option value="odontologico">Seguro Odontológico</option>
+                        <option value="viagem">Seguro Viagem</option>
+                        <option value="empresarial">Seguro Empresarial</option>
+                        <option value="rural">Seguro Rural</option>
+                        <option value="rc">Responsabilidade Civil</option>
+                        <option value="equipamentos">Equipamentos Portáteis</option>
+                        <option value="embarcacoes">Embarcações</option>
+                        <option value="credito">Seguro de Crédito</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Informações Adicionais</label>
+                    <textarea id="message" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%;">Enviar Solicitação</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>SafeCorretora</h3>
+            <p>Rua das Seguradoras, 123 - Centro, São Paulo/SP</p>
+            <p>CNPJ: 12.345.678/0001-99 | SUSEP: 12345.678910.1112.1</p>
+            <p>Atendimento: Segunda a Sexta, 9h às 18h</p>
+            <p>Telefone: (11) 1234-5678 | WhatsApp: (11) 98765-4321</p>
+            <p>E-mail: contato@safecorretora.com.br</p>
+            <p style="margin-top: 20px;">© 2023 SafeCorretora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
