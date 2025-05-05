@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corretor de Seguros - Divino Oliveira</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: url('https://via.placeholder.com/1200x400') center/cover; color: white; padding: 80px 20px; text-align: center; }
+    header h1 { font-size: 36px; margin-bottom: 10px; }
+    header p { font-size: 20px; }
+    header a { display: inline-block; margin-top: 20px; background: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { color: #2c3e50; }
+    ul { list-style: disc; padding-left: 20px; }
+    form label { display: block; margin-top: 15px; }
+    form input, form select, form textarea {
+      width: 100%; padding: 10px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;
+    }
+    form button {
+      margin-top: 20px; padding: 12px 20px; background: #25D366; color: white; border: none; border-radius: 8px; cursor: pointer;
+    }
+    footer { background: #f1f1f1; text-align: center; padding: 20px; font-size: 14px; }
+    footer a { color: #2c3e50; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Proteção Completa para Você, Sua Família e Seu Patrimônio</h1>
+  <p>Seguros Pessoais • Patrimoniais • Empresariais • Financeiros</p>
+  <a href="https://wa.me/5581999999999?text=Olá%2C+quero+uma+cotação+de+seguros" target="_blank">Solicitar Cotação via WhatsApp</a>
+</header>
+
+<section>
+  <h2>Sobre Mim</h2>
+  <p>Sou <strong>Divino Oliveira</strong>, corretor com atuação em todos os ramos de seguros. Atendo pessoas físicas e jurídicas, com foco na proteção completa e personalizada de patrimônio, vida e negócios. Trabalho com as melhores seguradoras do Brasil, garantindo soluções sob medida para cada cliente.</p>
+</section>
+
+<section>
+  <h2>Especialidades</h2>
+  <ul>
+    <li><strong>Pessoais:</strong> Vida, Acidentes, Viagem, Previdência</li>
+    <li><strong>Patrimoniais:</strong> Residencial, Automóvel, Empresarial, Condomínio</li>
+    <li><strong>Corporativos:</strong> Fiança, Frota, Responsabilidade Civil, Riscos de Engenharia</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Por que contratar comigo?</h2>
+  <ul>
+    <li>Atendimento 100% personalizado</li>
+    <li>Simulações com diversas seguradoras</li>
+    <li>Suporte total na contratação e no pós-venda</li>
+    <li>Consultoria completa para sua necessidade</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Solicite sua Cotação</h2>
+  <form action="https://wa.me/5581999999999" method="get" target="_blank">
+    <label>Nome:</label>
+    <input type="text" name="name" required>
+
+    <label>Telefone/WhatsApp:</label>
+    <input type="text" name="phone" required>
+
+    <label>Tipo de Seguro:</label>
+    <select name="seguro">
+      <option>Vida</option>
+      <option>Automóvel</option>
+      <option>Residencial</option>
+      <option>Empresarial</option>
+      <option>Outros</option>
+    </select>
+
+    <label>Cidade/Estado:</label>
+    <input type="text" name="cidade" required>
+
+    <label>Mensagem adicional:</label>
+    <textarea name="mensagem" rows="4"></textarea>
+
+    <button type="submit">Enviar via WhatsApp</button>
+  </form>
+</section>
+
+<section style="text-align:center; background:#f5f5f5; padding:30px;">
+  <h2>Pronto para proteger o que importa?</h2>
+  <p>Vamos conversar! Atendimento rápido, humano e sem compromisso.</p>
+  <a href="https://wa.me/5581999999999?text=Olá%2C+quero+uma+cotação+de+seguros" target="_blank" style="padding: 15px 30px; background: #25D366; color: white; font-size: 18px; border-radius: 10px;">Falar no WhatsApp</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Divino Oliveira - Corretor de Seguros | Todos os direitos reservados</p>
+  <p>Instagram: <a href="https://instagram.com/seuperfil" target="_blank">@seuperfil</a> | E-mail: <a href="mailto:seuemail@dominio.com">seuemail@dominio.com</a></p>
+</footer>
+
+</body>
+</html>
